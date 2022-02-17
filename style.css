@@ -1301,7 +1301,10 @@ border-bottom: 1px solid #000;
     .yaers {
         justify-self:center;
     }
-    .about_me_item5{
+    /* .about_me_item5{
+        margin-bottom: 0;
+    } */
+    .about_me_item6{
         margin-bottom: 0;
     }
       /* адаптация блока Этапы */
