@@ -10,7 +10,7 @@ header('Content-Type: text/html; charset=utf-8');
       $mail = trim(strip_tags($_POST['mail']));
       $message = trim(strip_tags($_POST['message']));
  
-      mail("eshkundin@mail.ru, avstruk@mail.ru", "Письмо с адрес_вашего_сайта \r\n", 
+      mail("eshkundin@mail.ru, avstruk@mail.ru", "Письмо с avstruk.com \r\n", 
       "Вам написал: ".$name."<br />Его номер: ".$phone."<br />Его почта: ".$mail."<br />
       Его сообщение: ".$message,"Content-type:text/html;charset=UTF-8","From: dog2020-ru_d303902e@1gb.ru \r\n");
  
