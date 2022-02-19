@@ -60,15 +60,6 @@ font-size: 42px;
 font-family: 'Mak';
 }
 
-.header_menu{
-
-}
-.menu_icon{
-
-}
-.menu_body{
-
-}
 .menu_list{
     display: grid;
     grid-template-columns:  1px 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -83,9 +74,7 @@ font-family: 'Mak';
     float: left;
     
 }
-.menu_link{
 
-}
 .start{
     justify-self: start;
     margin-left: 42px;
@@ -372,9 +361,7 @@ font-weight: 500;
 background: #EFDDAB;
 padding: 0 150px 70px 150px;
 }
-.container_title{
 
-}
 .page_section_2_title{
 font-family: 'Avenir Next Cyr';
 font-size: 67px;
@@ -391,9 +378,7 @@ margin-top: 45px;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.page_text_stage{
 
-}
 .stage{
 font-family: 'Avenir Next Cyr';
 font-weight: 400;
@@ -441,9 +426,7 @@ line-height: 53px;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
-.page_text_principle{
 
-}
 .principle{
     font-family: 'Avenir Next Cyr';
     font-weight: 400;
@@ -711,9 +694,7 @@ border-bottom: 1px solid #2f2f2f;
 .section_form{
     padding: 0 150px 0 150px;
 }
-.forma_2{
 
-}
 .forma_2 h2 {
    padding-top: 45px;
     font-family: 'Avenir Next Cyr';
@@ -793,9 +774,7 @@ left: 450px;
     background: #EFDDAB;
     padding: 10px 150px 40px 150px;
 }
-.container_title{
 
-}
 .container_title_contact{
     margin-top: 0;
     margin-bottom: 10px;
@@ -812,9 +791,7 @@ left: 450px;
     grid-template-columns: 1fr 1fr;
 
 }
-.section_6_img{
 
-}
 .section_contacts{
     font-family: 'Avenir Next Cyr';
     font-weight: 400;
@@ -835,9 +812,7 @@ left: 450px;
     font-size: 13px;
     line-height: 14px; 
 }
-.validator{
 
-}
 /* страница request.html */
 .page_section_7{
     padding: 90px 150px 0 150px;
@@ -855,9 +830,7 @@ display: grid;
 grid-template-columns: 1.5fr 1fr;
 gap: 20px;
 }
-.container_title_section_7{
 
-}
 .container_img{
 background: url(img/волна.jpg) no-repeat;
 display: grid;
@@ -897,11 +870,16 @@ padding-bottom: 100px;
     gap: 20px;
     
 }
+
 .container_img2{
 border-right: 1px solid #000;
 border-bottom: 1px solid #000;
-margin-left: 320px;
+/* margin-left: 320px; */
+
 padding-bottom: 36px;
+}
+.container_img2_img{
+ float: right;
 }
 .contaner_text2{
     position: relative;
@@ -941,9 +919,7 @@ border-bottom: 1px solid #000;
 .page_section_8{
     padding: 90px 150px 0 150px;
 }
-.container_title_section_8{
 
-}
 .page_section_8_title{
     font-family: 'Avenir Next Cyr';
     font-size: 67px;
@@ -1002,9 +978,6 @@ border-bottom: 1px solid #000;
 }
 .section_8_img{
     width: 100%;
-    /* height: 696px; */
-    /* background: url(img/ваза.jpg) no-repeat;
-    background-size: cover; */
     margin-top: 43px;
 }
 .section_8_images{
@@ -1069,6 +1042,14 @@ border-bottom: 1px solid #000;
     background: url(img/самолет.jpg) no-repeat;
     background-size: cover;
 }
+/*  */
+.container_section_7_2_main{
+    grid-template-columns: 1fr 1fr;   
+}
+.container_img2_img_main{
+    float: left;
+}
+
 /* анимация при скролле */
 .element-animation{
     opacity: 0;
@@ -1112,6 +1093,22 @@ border-bottom: 1px solid #000;
     z-index: 101;
   }
 /* мобильная версия */
+@media (max-width: 1500px){
+
+.request_link h2 {
+    font-size: 25px;
+}
+.request_arrow{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-top: 15px;
+}
+}
+
+
+
+
 @media (max-width: 1200px){
     /* верхнее меню бургер */
     .header_container{
@@ -1490,9 +1487,7 @@ height: auto;
      .container_title_section_8{
          margin-top: 0;
      }
-     .section_8_img{
-         
-     }
+   
      .section_8_page2{
          grid-template-columns: 1fr 1fr;
          column-gap: 20px;
@@ -1790,124 +1785,6 @@ height: 895px;
     }
 
 
-
-
-/* @media (min-width: 767px) {
-    .menu_list {
-        display: flex;
-        align-items: center;
-    }
-    .menu_list > li {
-        padding: 10px 0;
-    }
-    .menu_sub-list {
-        transform: translate(0px, 10%);
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-        transition: all 0.3s ease 0s;
-    }
-} */
-@media (max-width: 850px) {
-    /* верхнее меню - бургер 
-    .header_container{
-        margin-top: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .menu_icon {
-        z-index: 5;
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 18px;
-        cursor: pointer;
-    }
-    .menu_icon span,
-    .menu_icon::after,
-    .menu_icon::before {
-        left: 0;
-        position: absolute;
-        height: 10%;
-        width: 100%;
-        transition: all 0.3s ease 0s;
-        background-color: #2f2f2f;
-    }
-    .menu_icon::after,
-    .menu_icon::before {
-        content: "";
-    }
-    .menu_icon::before {
-        top: 0;
-    }
-    .menu_icon::after {
-        bottom: 0;
-    }
-    .menu_icon span {
-        top: 50%;
-        transform: scale(1) translate(0px, -50%);
-    }
-    .menu_icon._active span {
-        transform: scale(0) translate(0px, -50%);
-    }
-    .menu_icon._active::before {
-        top: 50%;
-        transform: rotate(-45deg) translate(0px, -50%);
-    }
-    .menu_icon._active::after {
-       bottom: 50%;
-        transform: rotate(45deg) translate(0px, 50%);
-    }
-    .menu_body {
-        position: fixed;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(239, 221, 171, 0.9);
-        padding: 100px 30px 30px 30px;
-        transition: left 0.3s ease 0s;
-        overflow: auto;
-    }
-    .menu_body._active{
-        left: 0;
-    }
-
-    .menu_list{
-        display: flex;
-        flex-direction: column;
-    }
-    .menu_list::before{
-        content: "";
-        display: none;
-    }
-    
-    .menu_list > li {
-        flex-wrap: wrap;
-        margin: 0px 0px 30px 0px;
-    }
-    .menu_list > li:last-child {
-        margin-bottom: 0px;
-    }
-    .menu_list > li._active .menu_sub-list{
-        display: block;
-    }
-    .menu_link {
-        font-size: 24px;
-    }
-    .menu_sub-list {
-        position: relative;
-        background-color: #fff;
-        flex: 1 1 100%;
-        margin: 20px 0px 0px 0px;
-        display: none;
-    }
-    .menu_sub-link {
-        font-size: 20px;
-        color: #000;
-    }*/
-}
 /* адаптив для телефонов минимальная ширина 480 максимальная */
 @media (max-width: 750px){
 
@@ -1916,7 +1793,6 @@ height: 895px;
 
  .page_section_main{
      margin: 100px 20px 20px 20px;
-    /* padding: 90px 20px 0 20px; */
 }
 .container_title_section_main{
     margin-top: 20px;
@@ -1990,14 +1866,7 @@ height: 895px;
     height: 70px;
     background: #efddab;
 }
-.button_request{
-    /* position: relative;
-    top: 110px;
-    left: 10px;
-    width: 100px;
-    height: 70px;
-    background: #efddab; */
-}
+
 .btn-oval{
     width: 100px;
     height: 62px;
@@ -2154,9 +2023,6 @@ height: 895px;
       font-size: 14px;
       line-height: 19px;
   }
-.container_section_2{
- 
-}
 
 .page_text_stage_2, .page_text_stage_1,.page_text_stage_3, .page_text_stage_4{
     grid-column-start: 1;
@@ -2192,9 +2058,7 @@ height: 400px;
 .container_section_3{
     padding-bottom: 65px;
 }
-.page_section_3{
 
-}
 .page_section_3_title{
     font-size: 29px;
     line-height: 39px;
@@ -2376,33 +2240,10 @@ margin-bottom: 40px;
 /* страница Запросы */
 .container_img {
     background-image: url(img/волна.jpg), linear-gradient(135deg, rgba(249, 250, 248, 0.6), rgba(238, 247, 234, 0.6));
-    background-blend-mode:overlay;
-    
+    background-blend-mode:overlay; 
      display: block;
-   /* position: relative;
-    overflow: hidden; */
-}
-/* .container_img p{
-    position: relative;
-    z-index: 2;
-}
-.container_img::before{
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    opacity: 0.1;
- 
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-size: cover; 
-} */
 
-
+}
 
 .section_7_div_text{
     display: block;
@@ -2490,6 +2331,11 @@ height: 100%;
     position: static;
     background: #F7F3E7;
 }
+#button_request_main{
+    display: block;
+    position: static;
+    background: #F7F3E7;
+}
 .forma_2 h2{
     padding: 0;
 }
@@ -2512,10 +2358,6 @@ height: 100%;
     padding-bottom: 40px;
 }
 
-.section_8_img{
-    /* background-size:cover; */
-    /* height: 185px;   */
-}
 .section_8_text2{
     /* grid-template-columns: 1fr; */
     display: block;
@@ -2629,5 +2471,10 @@ height: 100%;
     position: static;
     background: #F7F3E7;
     margin-top: 40px;
+}
+/* изменение блока page_section_7_main на главной странице */
+
+.container_img2_main {
+    display: none;
 }
 }
