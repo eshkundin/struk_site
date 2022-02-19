@@ -1,13 +1,14 @@
 //открытие и закрытие формы
-const button = document.querySelector('.button');
+const buttons = document.querySelectorAll('.button');
 const form1 = document.querySelector('#blablabla');
 const popup = document.querySelector('.popup');
 
+buttons.forEach(function(button){
 button.addEventListener('click', () => {
 form1.classList.add('open');
 popup.classList.add('popup_open');
 document.body.classList.toggle('_lock');
-});
+})});
 
 const clos = document.querySelector('.close')
 console.log(clos);
