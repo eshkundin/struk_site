@@ -802,15 +802,30 @@ left: 450px;
 
 }
 /* footer */
+footer{
+    background: #EFDDAB;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
 .container_footer{
     background: #EFDDAB;
     padding: 40px 150px;
-}
+  }
 .footer{
     font-family: 'Avenir Next Cyr';
     font-weight: 400;
     font-size: 13px;
     line-height: 14px; 
+}
+#current_date_time_block{
+    position: absolute;
+    bottom: 40px;
+    right: 5vw;
+    font-family: 'Avenir Next Cyr';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 14px;
 }
 
 /* страница request.html */
